@@ -7,13 +7,14 @@ function getQueryVariable(variable) {
 	        return pair[1];
         }
     }
-    alert('Query Variable ' + variable + ' not found');
+    return "Friend/Relative"
 }
 
-document.write("<br />Name = " + getQueryVariable("name"));
-
 var name = getQueryVariable("name");
-
+name = correctName(name);
 document.getElementById("name").innerHTML = name;
 
-alert(name);
+function correctName(name) {
+  name = name.replace("%20", " ");
+  return name;
+}
