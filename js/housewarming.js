@@ -10,9 +10,9 @@ function getQueryVariable(variable) {
     return "Friend/Relative"
 }
 
-var name = getQueryVariable("name");
-name = correctName(name);
-document.getElementById("name").innerHTML = name;
+var visitorName = getQueryVariable("name");
+visitorName = correctName(visitorName);
+document.getElementById("name").innerHTML = visitorName;
 
 function correctName(name) {
   name = name.replace("%20", " ");
