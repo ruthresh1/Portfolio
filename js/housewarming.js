@@ -15,6 +15,6 @@ visitorName = correctName(visitorName);
 document.getElementById("name").innerHTML = visitorName;
 
 function correctName(name) {
-  name = name.replace("%20", " ");
+  name = name.replace("%20", " ").replace(/[^a-zA-Z .]+/g,'');
   return name;
 }
