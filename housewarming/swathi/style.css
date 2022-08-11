@@ -6,18 +6,18 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: linear-gradient( rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.2) ), url('images/flowers1.jpg');
+    background: url('../images/lamp.jpg');
     background-size:cover;
-    /* opacity: 0.9; */
+    background-blend-mode: color-dodge;
     position:relative;
 }
 /* text css above hero image*/
 .hero_title {
-    font-family:Helvetica, Arial, sans-serif;
+    font-family:comic-sans;
     font-size: 2.2rem;
 }
 .hero_desc {
-    font-family:Helvetica, Arial, sans-serif;
+    font-family:comic-sans;
     font-size: 1.8rem;
 }
 .hero-text {
@@ -26,15 +26,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(3, 1, 12);
+    color: rgb(9, 0, 51);
 }
 
-.name {
-    color: rgb(44, 1, 44);
-}
-.contactContent {
-    background-color: gray;
-}
 /* spacing on all sections */
 /* #about, #services, #portfolio, #contact {
     margin-top: 4rem;
