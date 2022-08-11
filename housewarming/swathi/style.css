@@ -6,7 +6,7 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/lamp.jpg');
+    background: url('../images/lamp.jpg');
     background-size:cover;
     background-blend-mode: color-dodge;
     position:relative;
